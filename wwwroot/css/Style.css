@@ -1,0 +1,692 @@
+﻿body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    header h1 {
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+.video-player {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#live-stream-video {
+    width: 100%;
+    max-width: 800px;
+}
+
+.chat {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .chat h2 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 10px;
+        position: relative;
+        padding-left: 40px; /* Adjust this value based on your icon size */
+    }
+
+        .chat h2::before {
+            content: "\1F464"; /* Unicode character for a user icon */
+            position: absolute;
+            left: 0;
+            font-size: 28px;
+        }
+
+#chat-messages {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#message-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#send-button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    #send-button:hover {
+        background: #555;
+    }
+/* Add styles for video player */
+.video-player {
+    margin: 20px 0;
+}
+
+/* Style the recorded videos */
+#recorded-videos {
+    margin-top: 20px;
+}
+
+/* Style error messages */
+#error-message {
+    display: none;
+    margin-top: 10px;
+}
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    header h1 {
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+.video-player {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#live-stream-video {
+    width: 100%;
+    max-width: 800px;
+}
+
+.chat {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .chat h2 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 10px;
+        position: relative;
+        padding-left: 40px; /* Adjust this value based on your icon size */
+    }
+
+        .chat h2::before {
+            content: "\1F464"; /* Unicode character for a user icon */
+            position: absolute;
+            left: 0;
+            font-size: 28px;
+        }
+
+#chat-messages {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#message-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#send-button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    #send-button:hover {
+        background: #555;
+    }
+/* Add styles for video player */
+.video-player {
+    margin: 20px 0;
+}
+
+/* Style the recorded videos */
+#recorded-videos {
+    margin-top: 20px;
+}
+
+/* Style error messages */
+#error-message {
+    display: none;
+    margin-top: 10px;
+}
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    header h1 {
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+.video-player {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#live-stream-video {
+    width: 100%;
+    max-width: 800px;
+}
+
+.chat {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .chat h2 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 10px;
+        position: relative;
+        padding-left: 40px; /* Adjust this value based on your icon size */
+    }
+
+        .chat h2::before {
+            content: "\1F464"; /* Unicode character for a user icon */
+            position: absolute;
+            left: 0;
+            font-size: 28px;
+        }
+
+#chat-messages {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#message-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#send-button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    #send-button:hover {
+        background: #555;
+    }
+/* Add styles for video player */
+.video-player {
+    margin: 20px 0;
+}
+
+/* Style the recorded videos */
+#recorded-videos {
+    margin-top: 20px;
+}
+
+/* Style error messages */
+#error-message {
+    display: none;
+    margin-top: 10px;
+}
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    header h1 {
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+.video-player {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#live-stream-video {
+    width: 100%;
+    max-width: 800px;
+}
+
+.chat {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .chat h2 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 10px;
+        position: relative;
+        padding-left: 40px; /* Adjust this value based on your icon size */
+    }
+
+        .chat h2::before {
+            content: "\1F464"; /* Unicode character for a user icon */
+            position: absolute;
+            left: 0;
+            font-size: 28px;
+        }
+
+#chat-messages {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#message-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#send-button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    #send-button:hover {
+        background: #555;
+    }
+/* Add styles for video player */
+.video-player {
+    margin: 20px 0;
+}
+
+/* Style the recorded videos */
+#recorded-videos {
+    margin-top: 20px;
+}
+
+/* Style error messages */
+#error-message {
+    display: none;
+    margin-top: 10px;
+}
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    header h1 {
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+.video-player {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#live-stream-video {
+    width: 100%;
+    max-width: 800px;
+}
+
+.chat {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .chat h2 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 10px;
+        position: relative;
+        padding-left: 40px; /* Adjust this value based on your icon size */
+    }
+
+        .chat h2::before {
+            content: "\1F464"; /* Unicode character for a user icon */
+            position: absolute;
+            left: 0;
+            font-size: 28px;
+        }
+
+#chat-messages {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#message-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#send-button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    #send-button:hover {
+        background: #555;
+    }
+/* Add styles for video player */
+.video-player {
+    margin: 20px 0;
+}
+
+/* Style the recorded videos */
+#recorded-videos {
+    margin-top: 20px;
+}
+
+/* Style error messages */
+#error-message {
+    display: none;
+    margin-top: 10px;
+}
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    header h1 {
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+.video-player {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#live-stream-video {
+    width: 100%;
+    max-width: 800px;
+}
+
+.chat {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .chat h2 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 10px;
+        position: relative;
+        padding-left: 40px; /* Adjust this value based on your icon size */
+    }
+
+        .chat h2::before {
+            content: "\1F464"; /* Unicode character for a user icon */
+            position: absolute;
+            left: 0;
+            font-size: 28px;
+        }
+
+#chat-messages {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#message-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#send-button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    #send-button:hover {
+        background: #555;
+    }
+/* Add styles for video player */
+.video-player {
+    margin: 20px 0;
+}
+
+/* Style the recorded videos */
+#recorded-videos {
+    margin-top: 20px;
+}
+
+/* Style error messages */
+#error-message {
+    display: none;
+    margin-top: 10px;
+}
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    header h1 {
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+.video-player {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#live-stream-video {
+    width: 100%;
+    max-width: 800px;
+}
+
+.chat {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .chat h2 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 10px;
+        position: relative;
+        padding-left: 40px; /* Adjust this value based on your icon size */
+    }
+
+        .chat h2::before {
+            content: "\1F464"; /* Unicode character for a user icon */
+            position: absolute;
+            left: 0;
+            font-size: 28px;
+        }
+
+#chat-messages {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#message-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#send-button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    #send-button:hover {
+        background: #555;
+    }
+/* Add styles for video player */
+.video-player {
+    margin: 20px 0;
+}
+
+/* Style the recorded videos */
+#recorded-videos {
+    margin-top: 20px;
+}
+
+/* Style error messages */
+#error-message {
+    display: none;
+    margin-top: 10px;
+}
+

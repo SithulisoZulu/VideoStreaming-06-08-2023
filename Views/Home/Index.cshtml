@@ -1,0 +1,111 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Streaming</title>
+    <link rel="stylesheet" href="~/css/styles.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+            header h1 {
+                color: #333;
+            }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .video-box,
+        .chat-box {
+            width: 100%;
+            max-width: 800px;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        video {
+            width: 100%;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        #chat-messages {
+            max-height: 300px;
+            overflow-y: scroll;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        #message-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-top: 10px;
+        }
+
+        #send-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>DutApp Factory Live Streaming</h1>
+            <img src="assets/images/logo.png" alt="Logo" />
+        </header>
+        <main>
+            <div class="video-box">
+                <h2>Live Video</h2>
+                <video id="live-stream-video" controls>
+                    <source src="path_to_live_stream_video.mp4" type="video/mp4" />
+                </video>
+            </div>
+           @* <div class="video-player">
+                <video id="live-stream-video" controls>
+                    <source src="assets/images/live_stream_video.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>*@
+            <div class="chat-box">
+                <h2>Live Chat</h2>
+                <div id="chat-messages"></div>
+                <input type="text" id="message-input" placeholder="Please Type your message..." />
+                <button class="btn btn-info" id="send-button">Send</button>
+            </div>
+        </main>
+    </div>
+    <script src="~/js/chat.js"></script>
+</body>
+</html>

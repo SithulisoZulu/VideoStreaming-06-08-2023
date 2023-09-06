@@ -1,0 +1,88 @@
+﻿@page
+@model VideoStreaming.Pages.VideoPlay.LiveStreamingModel
+@section Stylesheets
+{
+	@{
+		Layout = "_Layout";
+	}
+	<link rel="stylesheet" type="text/css" href="/assets/css/HideStyle.css">
+<link rel="stylesheet" href="https://unpkg.com/vue-select@3.0.0/dist/vue-select.css">
+<!-- Favicon -->
+	<link rel="shortcut icon" href="/assets/images/favicon.ico">
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" type="text/css" href="/assets/vendor/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="/assets/vendor/bootstrap-icons/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="/assets/vendor/choices/css/choices.min.css">
+	<link rel="stylesheet" type="text/css" href="/assets/vendor/glightbox/css/glightbox.css">
+	<link rel="stylesheet" type="text/css" href="/assets/vendor/quill/css/quill.snow.css">
+	<link rel="stylesheet" type="text/css" href="/assets/vendor/stepper/css/bs-stepper.min.css">
+	<link rel="stylesheet" type="text/css" href="/assets/vendor/overlay-scrollbar/css/OverlayScrollbars.min.css">
+
+	<!-- Theme CSS -->
+	<link id="style-switch" rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+}
+
+
+<div class="page-content">
+	<!-- Page main content START -->
+	<div class="page-content-wrapper border">
+		<section class="py-0 pb-lg-5">
+			<div class="container">
+				<div class="row g-3">
+
+
+					
+					<!-- Card START -->
+					@Html.AntiForgeryToken()
+					<!-- Course video START -->
+					<div class="col-12">
+						<div class="video-player rounded-3">
+
+							<video autoplay id="videoElement" height="690" width="720" controls style="border: none;" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true">
+								
+						</video>
+								
+						</div>
+					</div>
+					<!-- Course video END -->
+
+				</div>
+
+			</div>
+		</section>
+	</div>
+</div>
+ @section scripts{
+	<!-- Bootstrap JS -->
+	<script src="/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Vendors -->
+	<script src="/assets/vendor/choices/js/choices.min.js"></script>
+	<script src="/assets/vendor/glightbox/js/glightbox.js"></script>
+	<script src="/assets/vendor/quill/js/quill.min.js"></script>
+	<script src="/assets/vendor/stepper/js/bs-stepper.min.js"></script>
+	<script src="/assets/vendor/overlay-scrollbar/js/overlayscrollbars.min.js"></script>
+	<!-- Template Functions -->
+	<script src="/assets/js/functions.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/tus-js-client/dist/tus.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js" integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"> </script>
+	<script src="https://embed.cloudflarestream.com/embed/sdk.latest.js"></script>
+
+	<script src="~/Scripts/Videos/LiveVideo.js"></script>
+ }
+
+
